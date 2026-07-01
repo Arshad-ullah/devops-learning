@@ -9,7 +9,5 @@ function subtract(a, b) {
 }
 
 
-
-add(5, 3); // returns 8
-
-subtract(5, 3); // returns 2
+console.log("Addition of 5 and 3 is: " + add(5, 3));
+console.log("Subtraction of 5 and 3 is: " + subtract(5, 3));
