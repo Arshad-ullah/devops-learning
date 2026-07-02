@@ -6,6 +6,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                sh 'pwd'
+                sh 'ls -la'
+                sh 'node conditions.js'
             }
         }
 
@@ -20,6 +23,5 @@ pipeline {
                 echo 'Deploying...'
             }
         }
-        
     }
 }
