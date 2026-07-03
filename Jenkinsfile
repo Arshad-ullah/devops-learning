@@ -7,12 +7,13 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'pwd'
-                // sh 'ls -la'
+                
                 sh 'node conditions.js'
-                sh '==============>>'
+                echo '==============>>'
                 sh 'python3 devops.py'
-                sh '==============>>'
+                echo '==============>>'
                 sh 'test.dart'
+                echo '==============>>'
             }
         }
 
