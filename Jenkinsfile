@@ -12,7 +12,7 @@ pipeline {
                 echo '==============>>'
                 sh 'python3 devops.py'
                 echo '==============>>'
-                sh 'test.dart'
+                sh 'dart test.dart'
                 echo '==============>>'
             }
         }
